@@ -4,3 +4,24 @@
 
 /MyDashboardUI/MyDashboardUI/bin/Debug/net8.0
 /MyDashboardUI/MyDashboardUI/obj
+/MyDashboardUI/src/MyDashboardUI/bin/Debug/net8.0
+/MyDashboardUI/src/MyDashboardUI/obj
+/MyDashboardUI/src/DocumentAIProcessor/bin
+/MyDashboardUI/src/.vs/MyDashboardUI/copilot-chat/00b1c4a9/sessions
+/MyDashboardUI/src/.vs/MyDashboardUI/CopilotIndices/17.14.827.52834
+/MyDashboardUI/src/DocumentAIProcessor/obj
+/MyDashboardUI/src/DocumentWatcher/obj/Debug
+/MyDashboardUI/src/FileWatcherService/bin
+/MyDashboardUI/src/FileWatcherService/logs
+/MyDashboardUI/src/FileWatcherService/obj
+/MyDashboardUI/src/FileWatcherService/appsettings.release.json
+/MyDashboardUI/src/FileWatcherService/appsettings.json
+/MyDashboardUI/src/MyDashboardModels/bin
+/MyDashboardUI/src/MyDashboardModels/obj
+/MyDashboardUI/src/MyDashboardUI/bin/Release/net8.0
+/MyDashboardUI/src/TestApp/bin/Release/net8.0
+/MyDashboardUI/src/TestApp/obj
+/MyDashboardUI/src/.vs
+/MyDashboardUI/src/DocumentWatcher/.vs
+/MyDashboardUI/.vs
+/.vs

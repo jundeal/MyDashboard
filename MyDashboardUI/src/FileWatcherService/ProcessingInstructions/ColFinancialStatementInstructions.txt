@@ -1,0 +1,43 @@
+COL Financial Statement file structure -- Return the output based on the provided Json format.
+1. firm_name is at the start of the file, before the "Date Printed"
+2. report_generation_date is the value right after "Date Printed :"
+3. as_of is the value right after "As of"
+4. report_generation_date is the value right after ":ACCOUNT NO.  :" and before "Date Opened"
+5. account_name is the value between ":ACCOUNT NAME :" and ":"
+6. For transaction details:
+   - The column names is at the row where it starts with ":TRX", these are the column headers
+       a. The first column is "TRX DATE" = transaction_date
+       b. The second column is "TYPE" = transaction_type
+       c. The third column is "REF.NO." = reference_number
+       d. The fourth column is "SECU" = security
+       e. The fifth column is "SHARES" = shares
+       f. The sixth column is "COST/PRICE" = cost_price
+       g. The seventh column is "GROSS AMOUNT" = gross_amount
+       h. The eighth column is "COMM+VAT" = commision_and_vat
+       i. The ninth column is "OTHER FEES" = other_charges
+       j. The tenth column is "NET AMOUNT" = net_amount
+       k. The eleventh column is "BALANCE" = balance
+       l. The twelfth column is "COST" = cost
+       m. The thirteenth column is "GAINS(LOSS)" = gains_loss
+  - The transaction details start 2 rows after the row "BEGINNING BALANCE"
+       a. The entire row value is enclosed with ":", and the values for each column are separated by ":"
+       b. If the value of TYPE is OR, assign the value of SECU to transaction_description, leaving the security, shares and cost_price fields empty. 
+       c. If the value of TYPE is CDIV+, assign the value of SECU to transaction_description
+            c.1 The value of security is between "CD" and the number of shares.   
+            c.2 The value of shares is the number of shares after security and before " @"
+            c.3 The value of cost_price is the number after " @P" and before "/sh"
+7. For stock_positions:
+   - The column names is at the next 2 rows starting the row before ":STOCK", these are the column headers
+       a. The first column is "STOCK POS." = stock
+       b. The second column is "BEGINNING NO. OF SHARES" = beginning_shares
+       c. the third column is "ENDING NO. OF SHARES" = ending_shares
+       d. The fourth column is "CURRENT NO. OF SHARES" = current_shares
+       c. The third column is "COST" = cost_price
+       e. The fourth column is "AVERAGE UNIT COST" = average_cost
+       f. The fifth column is "CURRENT MARKET PRICE" = market_price
+       g. The sixth column is "CURRENT MARKET VALUE" = market_value
+       h. The seventh column is "POTENTIAL GAINS(LOSS)" = gains_loss
+   - The stock positions start 2 rows after the row ":STOCK"
+       a. The entire row value is enclosed with ":", and the values for each column are separated by ":"
+   - 
+

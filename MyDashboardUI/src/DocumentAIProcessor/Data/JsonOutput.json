@@ -1,0 +1,50 @@
+{
+  "firm_name": "",
+  "report_generation_date": "",
+  "as_of": "",
+  "account_number": "",
+  "account_name": "",
+  "total_equity": 0.0,
+  "transactions": {
+    "transaction_details": [
+      {
+        "transaction_date": "",
+        "transaction_type": "",
+        "reference_number": "",
+        "security": "",
+        "shares": 0.0,
+        "price_per_share": 0.0,
+        "gross_amount": 0.0,
+        "commision_and_vat": 0.0,
+        "other_charges": 0.0,
+        "net_amount": 0.0,
+        "balance": 0.0,
+        "cost": 0.0,
+        "gain_loss": 0.0,
+        "transaction_description": "",
+        "transaction_amount": 0.0
+      }
+    ],
+    "balance": 0.0,
+    "total_gain_loss": 0.0
+  },
+  "stocks": {
+    "stock_positions": [
+      {
+        "security": "",
+        "beging_shares": 0.0,
+        "ending_shares": 0.0,
+        "current_shares": 0.0,
+        "cost": 0.0,
+        "average_cost": 0.0,
+        "current_market_price": 0.0,
+        "market_value": 0.0,
+        "gain_loss": 0.0
+      }
+    ],
+    "total_cost": 0.0,
+    "total_market_value": 0.0,
+    "total_gain_loss": 0.0
+  }
+
+}
